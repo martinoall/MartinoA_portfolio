@@ -4,7 +4,7 @@ baseURL = "https://username.github.io/your-repo/"
 languageCode = "en-us"
 title = "My Photography Portfolio"
 theme = "beautifulhugo"
+publishDir = "docs"
 
 [pagination]
   pagerSize = 6
-  
