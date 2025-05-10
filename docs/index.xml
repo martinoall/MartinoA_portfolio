@@ -2,11 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Welcome on My Photography Portfolio</title>
-    <link>https://martinoall.github.io/MartinoA_portfolio/</link>
+    <link>http://localhost:1313/MartinoA_portfolio/</link>
     <description>Recent content in Welcome on My Photography Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="https://martinoall.github.io/MartinoA_portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 May 2025 22:09:45 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/MartinoA_portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Urban Portrait</title>
+      <link>http://localhost:1313/MartinoA_portfolio/work/urban-portrait/</link>
+      <pubDate>Sat, 10 May 2025 22:09:45 +0200</pubDate>
+      <guid>http://localhost:1313/MartinoA_portfolio/work/urban-portrait/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/MartinoA_portfolio/about/</link>
+      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/MartinoA_portfolio/about/</guid>
+      <description>&lt;p&gt;I’m Martino, a landscape and portrait photographer based in Stockholm. I love capturing the golden hour and candid moments.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/MartinoA_portfolio/contact/</link>
+      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/MartinoA_portfolio/contact/</guid>
+      <description>&lt;p&gt;Feel free to get in touch!&lt;/p&gt;&#xA;&lt;form action=&#34;https://formspree.io/f/yourID&#34; method=&#34;POST&#34;&gt;&#xA;  &lt;input name=&#34;name&#34; placeholder=&#34;Your name&#34; required&gt;&#xA;  &lt;input name=&#34;email&#34; type=&#34;email&#34; placeholder=&#34;Your email&#34; required&gt;&#xA;  &lt;textarea name=&#34;message&#34; placeholder=&#34;How can I help?&#34; required&gt;&lt;/textarea&gt;&#xA;  &lt;button type=&#34;submit&#34;&gt;Send&lt;/button&gt;&#xA;&lt;/form&gt;</description>
+    </item>
+    <item>
+      <title>Marco &amp; Chiara</title>
+      <link>http://localhost:1313/MartinoA_portfolio/work/weddings/marco-chiara/</link>
+      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/MartinoA_portfolio/work/weddings/marco-chiara/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mountain Sunrise</title>
+      <link>http://localhost:1313/MartinoA_portfolio/work/mountain-sunrise/</link>
+      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/MartinoA_portfolio/work/mountain-sunrise/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Soria &amp; Antoine</title>
+      <link>http://localhost:1313/MartinoA_portfolio/work/weddings/soria--antoine/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/MartinoA_portfolio/work/weddings/soria--antoine/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

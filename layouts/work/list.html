@@ -1,0 +1,42 @@
+{{ define "main" }}
+
+  {{/* Top-level /work/ page: list categories */}}
+  {{ if eq .File.Path "work/_index.md" }}
+    <section class="category-list">
+      {{ range .Sections }}
+        <article class="category-item">
+          <a href="{{ .RelPermalink }}">
+            <h2>{{ .Title }}</h2>
+          </a>
+        </article>
+      {{ end }}
+    </section>
+
+  {{ else }}
+    {{/* Compute default cover from section bundle */}}
+    {{ $sectionCover := .Resources.GetMatch "default*" }}
+    {{ $defaultCover := cond $sectionCover $sectionCover.RelPermalink "" }}
+
+    <section id="category-hero" class="category-hero" data-default-cover="{{ $defaultCover }}">
+
+      {{/* Centered category title */}}
+      <div class="category-title">
+        <h1>{{ .Title }}</h1>
+        <hr />
+      </div>
+
+      {{/* List of projects */}}
+      <div class="project-list">
+        {{ range union .Sections .RegularPages.ByDate.Reverse }}
+          {{ $coverRes := .Resources.GetMatch "cover*" }}
+          {{ $coverURL := cond $coverRes $coverRes.RelPermalink "" }}
+          <div class="project-entry" data-cover="{{ $coverURL }}" data-url="{{ .Permalink }}">
+            <h1>{{ .Title }}</h1>
+          </div>
+        {{ end }}
+      </div>
+
+    </section>
+  {{ end }}
+
+{{ end }}

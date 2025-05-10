@@ -1,0 +1,36 @@
+{{ define "main" }}
+<article class="project-single">
+
+  <header class="project-header">
+    {{/* Project date (from .Date) */}}
+    <time class="project-date" datetime="{{ .Date.Format "2006-01-02" }}">
+      {{ .Date.Format "2006" }}
+    </time>
+
+    <h1 class="project-title">{{ .Title }}</h1>
+
+    {{ with .Params.excerpt }}
+      <p class="project-excerpt">{{ . }}</p>
+    {{ end }}
+  </header>
+
+  {{/* Cover Image */}}
+  {{ $cover := .Resources.GetMatch "cover*" }}
+  {{ if $cover }}
+    <figure>
+      <img src="{{ $cover.RelPermalink }}" alt="{{ .Title }}">
+    </figure>
+  {{ end }}
+
+  <section class="project-gallery">
+    {{ range .Resources.Match "*.*" }}
+      {{ if not (eq .Name $cover.Name) }}
+        <figure>
+          <img src="{{ .RelPermalink }}" alt="{{ $.Title }}">
+        </figure>
+      {{ end }}
+    {{ end }}
+  </section>
+
+</article>
+{{ end }}

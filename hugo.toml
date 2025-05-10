@@ -6,7 +6,7 @@ title = "My Photography Portfolio"
 theme = "beautifulhugo"
 publishDir = "docs"
 # generate links relative to that baseURL, so CSS/JS/images resolve correctly
-relativeURLs = true
+relativeURLs = false
 canonifyURLs = false
 
 [markup]
@@ -16,3 +16,23 @@ canonifyURLs = false
 
 [pagination]
   pagerSize = 6
+  
+
+
+
+  [menu]
+
+  [[menu.main]]
+    name = "Work"
+    url  = "/work/"
+    weight = 10
+
+  [[menu.main]]
+    name = "About"
+    url  = "/about/"
+    weight = 20
+
+  [[menu.main]]
+    name = "Contact"
+    url  = "/contact/"
+    weight = 30
