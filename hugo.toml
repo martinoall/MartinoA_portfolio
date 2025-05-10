@@ -1,10 +1,13 @@
 # hugo.toml
 
-baseURL = "https://username.github.io/your-repo/"
+baseURL = "https://github.com/martinoall/MartinoA_portfolio/"
 languageCode = "en-us"
 title = "My Photography Portfolio"
 theme = "beautifulhugo"
 publishDir = "docs"
+# generate links relative to that baseURL, so CSS/JS/images resolve correctly
+relativeURLs = true
+canonifyURLs = false
 
 [pagination]
   pagerSize = 6
