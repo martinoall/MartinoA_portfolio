@@ -1,6 +1,6 @@
 # hugo.toml
 
-baseURL = "https://github.com/martinoall/MartinoA_portfolio/"
+baseURL = "https://martinoall.github.io/MartinoA_portfolio/"
 languageCode = "en-us"
 title = "My Photography Portfolio"
 theme = "beautifulhugo"
