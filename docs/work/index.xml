@@ -6,21 +6,7 @@
     <description>Recent content in Work on My Photography Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 May 2025 22:09:45 +0200</lastBuildDate>
+    <lastBuildDate></lastBuildDate>
     <atom:link href="http://localhost:1313/MartinoA_portfolio/work/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Urban Portrait</title>
-      <link>http://localhost:1313/MartinoA_portfolio/work/urban-portrait/</link>
-      <pubDate>Sat, 10 May 2025 22:09:45 +0200</pubDate>
-      <guid>http://localhost:1313/MartinoA_portfolio/work/urban-portrait/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mountain Sunrise</title>
-      <link>http://localhost:1313/MartinoA_portfolio/work/mountain-sunrise/</link>
-      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/MartinoA_portfolio/work/mountain-sunrise/</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>

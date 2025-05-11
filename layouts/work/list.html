@@ -1,31 +1,39 @@
 {{ define "main" }}
 
-  {{/* Top-level /work/ page: list categories */}}
-  {{ if eq .File.Path "work/_index.md" }}
-    <section class="category-list">
+  {{ if eq .Section "weddings" }}
+    <section class="weddings-gallery">
+      {{ range .Pages }}
+        {{ $cover := .Resources.GetMatch .Params.featured_image }}
+        {{ $coverURL := cond $cover $cover.RelPermalink "" }}
+        <div class="wedding-block" style="background-image: url('{{ $coverURL }}');">
+          <a class="wedding-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </div>
+      {{ end }}
+    </section>
+
+    {{ else if eq .File.Path "work/_index.md" }}
+    <section class="category-list with-backgrounds">
       {{ range .Sections }}
-        <article class="category-item">
-          <a href="{{ .RelPermalink }}">
+        {{ $cover := .Resources.GetMatch .Params.featured_image }}
+        {{ $coverURL := cond $cover $cover.RelPermalink "" }}
+        <a class="category-item-bg" href="{{ .RelPermalink }}" style="background-image: url('{{ $coverURL }}');">
+          <div class="category-overlay">
             <h2>{{ .Title }}</h2>
-          </a>
-        </article>
+          </div>
+        </a>
       {{ end }}
     </section>
 
   {{ else }}
-    {{/* Compute default cover from section bundle */}}
     {{ $sectionCover := .Resources.GetMatch "default*" }}
     {{ $defaultCover := cond $sectionCover $sectionCover.RelPermalink "" }}
 
     <section id="category-hero" class="category-hero" data-default-cover="{{ $defaultCover }}">
-
-      {{/* Centered category title */}}
       <div class="category-title">
         <h1>{{ .Title }}</h1>
         <hr />
       </div>
 
-      {{/* List of projects */}}
       <div class="project-list">
         {{ range union .Sections .RegularPages.ByDate.Reverse }}
           {{ $coverRes := .Resources.GetMatch "cover*" }}
@@ -35,8 +43,8 @@
           </div>
         {{ end }}
       </div>
-
     </section>
+
   {{ end }}
 
 {{ end }}

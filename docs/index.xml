@@ -6,15 +6,8 @@
     <description>Recent content in Welcome on My Photography Portfolio</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 May 2025 22:09:45 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 10 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/MartinoA_portfolio/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Urban Portrait</title>
-      <link>http://localhost:1313/MartinoA_portfolio/work/urban-portrait/</link>
-      <pubDate>Sat, 10 May 2025 22:09:45 +0200</pubDate>
-      <guid>http://localhost:1313/MartinoA_portfolio/work/urban-portrait/</guid>
-      <description></description>
-    </item>
     <item>
       <title>About</title>
       <link>http://localhost:1313/MartinoA_portfolio/about/</link>
@@ -37,10 +30,10 @@
       <description></description>
     </item>
     <item>
-      <title>Mountain Sunrise</title>
-      <link>http://localhost:1313/MartinoA_portfolio/work/mountain-sunrise/</link>
-      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/MartinoA_portfolio/work/mountain-sunrise/</guid>
+      <title>Soria &amp; Antoine</title>
+      <link>http://localhost:1313/MartinoA_portfolio/work/food/food-2/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/MartinoA_portfolio/work/food/food-2/</guid>
       <description></description>
     </item>
     <item>
@@ -48,6 +41,20 @@
       <link>http://localhost:1313/MartinoA_portfolio/work/weddings/soria--antoine/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/MartinoA_portfolio/work/weddings/soria--antoine/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pizza Mania</title>
+      <link>http://localhost:1313/MartinoA_portfolio/work/food/food-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/MartinoA_portfolio/work/food/food-1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pizza Mania</title>
+      <link>http://localhost:1313/MartinoA_portfolio/work/vans/van1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/MartinoA_portfolio/work/vans/van1/</guid>
       <description></description>
     </item>
   </channel>
