@@ -12,16 +12,21 @@
     </section>
 
     {{ else if eq .File.Path "work/_index.md" }}
-    <section class="category-list with-backgrounds">
-      {{ range .Sections }}
-        {{ $cover := .Resources.GetMatch .Params.featured_image }}
-        {{ $coverURL := cond $cover $cover.RelPermalink "" }}
-        <a class="category-item-bg" href="{{ .RelPermalink }}" style="background-image: url('{{ $coverURL }}');">
-          <div class="category-overlay">
-            <h2>{{ .Title }}</h2>
-          </div>
-        </a>
-      {{ end }}
+    {{ $defaultBG := .Resources.GetMatch "default*" }}
+    <section class="home-hero" style="background-image: url('{{ $defaultBG.RelPermalink }}');">
+      <div class="hero-overlay"></div>
+
+      <section class="category-list with-backgrounds">
+        {{ range .Sections }}
+          {{ $cover := .Resources.GetMatch .Params.featured_image }}
+          {{ $coverURL := cond $cover $cover.RelPermalink "" }}
+          <a class="category-item-bg" href="{{ .RelPermalink }}" style="background-image: url('{{ $coverURL }}');">
+            <div class="category-overlay">
+              <h2>{{ .Title }}</h2>
+            </div>
+          </a>
+        {{ end }}
+      </section>
     </section>
 
   {{ else }}
