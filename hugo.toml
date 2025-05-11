@@ -17,7 +17,9 @@ canonifyURLs = false
 [pagination]
   pagerSize = 6
   
-
+[params]
+  homeTitle = "My Photography Portfolio"
+  tagline   = "Wedding Photographer based in Charleston, South Carolina"
 
 
   [menu]

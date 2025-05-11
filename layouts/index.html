@@ -1,0 +1,32 @@
+{{ define "main" }}
+
+  {{/* Grab the hero image from the homepage bundle */}}
+  {{ $hero := .Resources.GetMatch "default*" }}
+
+  <section id="home-hero" class="home-hero">
+
+    {{ with $hero }}
+    <picture class="hero-bg-picture">
+      {{ $small := .Resize "640x0" }}
+      {{ $med   := .Resize "1024x0" }}
+      {{ $large := .Resize "1920x0" }}
+      <source media="(min-width:1200px)" srcset="{{ $large.RelPermalink }}">
+      <source media="(min-width:768px)" srcset="{{ $med.RelPermalink }}">
+      <img src="{{ $small.RelPermalink }}" alt="Hero background" class="hero-bg-img">
+    </picture>
+    {{ end }}
+
+
+
+    <!-- centered hero content -->
+    <div class="hero-content">
+      <h1 class="hero-title">{{ .Site.Params.homeTitle }}</h1>
+      {{ with .Site.Params.tagline }}
+        <p class="hero-tagline">{{ . }}</p>
+      {{ end }}
+      <a href="{{ "work/" | relURL }}" class="hero-button">View Portfolio</a>
+    </div>
+
+  </section>
+
+{{ end }}
